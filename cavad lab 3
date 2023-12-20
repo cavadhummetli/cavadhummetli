@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int N, toplam = 0;
+
+    // Kullanıcıdan N sayısını al
+    printf("Bir sayı girin: ");
+    scanf("%d", &N);
+
+    // 1'den N'e kadar olan tek sayıları topla
+    for (int i = 1; i <= N; i += 2) {
+        toplam += i;
+    }
+
+    // Sonucu ekrana yazdır
+    printf("1'den %d'e kadar olan tek sayıların toplamı: %d\n", N, toplam);
+
+    return 0;
+}
